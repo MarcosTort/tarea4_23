@@ -1,6 +1,7 @@
 #include "../include/colaDePrioridadPersona.h"
 #include "../include/utils.h"
 #include "../include/evento.h"
+#include "../include/fecha.h"
 struct Elem
 {
   TPersona persona;
@@ -13,7 +14,10 @@ struct rep_colaDePrioridadPersona
   nat cant;
   TFecha *prioridades;
 };
-
+TFecha obtenerFechaPrioridad(TPersona persona)
+{
+  return fechaTEvento(primerEventoDeTPersona(persona));
+}
 TColaDePrioridadPersona crearCP(nat N)
 {
   TColaDePrioridadPersona cp = new rep_colaDePrioridadPersona();
@@ -82,10 +86,7 @@ void liberarCP(TColaDePrioridadPersona &cp)
   delete cp;
   
 }
-TFecha obtenerFechaPrioridad(TPersona persona)
-{
-  return fechaTEvento(primerEventoDeTPersona(persona));
-}
+
 void insertarEnCP(TPersona persona, TColaDePrioridadPersona &cp)
 {
   cp->cant = cp->cant + 1;
