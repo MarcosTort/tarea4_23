@@ -49,13 +49,10 @@ int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
   return compararTFechas(fecha1, fecha2);
 }
 
-
-
-
 void filtradoAscendente(TColaDePrioridadPersona cp, nat i)
 {
 
-  while ((compararConInversion(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad, cp->invertido )) && (cp->array[i / 2].persona != NULL))
+  while ((compararConInversion(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad, cp->invertido) == 1) && (cp->array[i / 2].persona != NULL))
   {
     Elem aux = cp->array[i / 2];
     cp->array[i / 2] = cp->array[i];
@@ -65,8 +62,6 @@ void filtradoAscendente(TColaDePrioridadPersona cp, nat i)
     i = i / 2;
   }
 }
-
-
 
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
@@ -100,7 +95,7 @@ void insertarEnCP(TPersona persona, TColaDePrioridadPersona &cp)
   cp->array[cp->cant].fechaPrioridad = obtenerFechaPrioridad(persona);
   cp->prioridades[idTPersona(persona)] = obtenerFechaPrioridad(persona);
   nat i = cp->cant;
-  while ((compararConInversion(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad, cp->invertido)) && (cp->array[i / 2].persona != NULL))
+  while ((compararConInversion(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad, cp->invertido) == 1) && (cp->array[i / 2].persona != NULL))
   {
     Elem aux = cp->array[i / 2];
     cp->array[i / 2] = cp->array[i];
@@ -135,11 +130,11 @@ void eliminarPrioritaria(TColaDePrioridadPersona &cp)
   for (iter = 1; iter * 2 <= cp->cant; iter = hijo)
   {
     hijo = iter * 2;
-    if (hijo != cp->cant && compararConInversion(cp->array[hijo].fechaPrioridad, cp->array[hijo + 1].fechaPrioridad, cp->invertido))
+    if (hijo != cp->cant && compararConInversion(cp->array[hijo].fechaPrioridad, cp->array[hijo + 1].fechaPrioridad, cp->invertido) == 1)
     {
       hijo++;
     }
-    if (compararConInversion(cp->array[hijo].fechaPrioridad, ult.fechaPrioridad, cp->invertido))
+    if (compararConInversion(cp->array[hijo].fechaPrioridad, ult.fechaPrioridad, cp->invertido) == 1)
     {
       break;
     }
