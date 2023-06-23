@@ -58,6 +58,7 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
   }
+  printf("iter: %d\n", iter);
   cp->array[iter] = swap;
 }
 
