@@ -43,31 +43,16 @@ TColaDePrioridadPersona crearCP(nat N)
 
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
-  
-  if (cp->invertido)
+  cp->invertido = !cp->invertido;
+  for (nat i = 1; i <= cp->cant / 2; i++)
   {
-    cp->invertido = false;
-  }
-  else
-  {
-    cp->invertido = true;
+    Elem aux = cp->array[i];
+    cp->array[i] = cp->array[cp->cant - i + 1];
+    cp->array[cp->cant - i + 1] = aux;
   }
   for (nat i = 1; i <= cp->cant; i++)
   {
-    cp->array[i].fechaPrioridad = cp->prioridades[idTPersona(cp->array[i].persona)];
-  }
-  for (nat i = 1; i <= cp->cant; i++)
-  {
-    nat iter = i;
-    while ((compararTFechas(cp->array[iter / 2].fechaPrioridad, cp->array[iter].fechaPrioridad) == 1) && (cp->array[iter / 2].persona != NULL))
-    {
-      Elem aux = cp->array[iter / 2];
-      cp->array[iter / 2] = cp->array[iter];
-      cp->prioridades[idTPersona(cp->array[iter / 2].persona)] = obtenerFechaPrioridad(cp->array[iter / 2].persona);
-      cp->array[iter] = aux;
-      cp->prioridades[idTPersona(cp->array[iter].persona)] = obtenerFechaPrioridad(cp->array[iter].persona);
-      iter = iter / 2;
-    }
+    cp->prioridades[idTPersona(cp->array[i].persona)] = obtenerFechaPrioridad(cp->array[i].persona);
   }
    
 }
@@ -114,6 +99,9 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
+  if(cp->invertido){
+    return cp->array[cp->cant].persona;
+  }
   return cp->array[1].persona;
 }
 
