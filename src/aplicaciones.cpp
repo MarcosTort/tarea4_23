@@ -15,16 +15,16 @@ void listarEnOrden(TTablaPersonas t, char** nombres, nat n) {
     for (nat i = 0; i < n; i++) {
         if (perteneceATTablaPersonas(t, nombres[i])) {
             TPersona persona = obtenerPersonaDeTTablaPersonas(t, nombres[i]);
-            insertarEnCP(persona, cp);
+            insertarEnCP(copiarTPersona(persona), cp);
         }
     }
 
-    // while (!estaVaciaCP(cp)) {
-    //     TPersona persona = prioritaria(cp);
-    //     imprimirTPersona(persona);
-    //     printf("\n");
-    //     eliminarPrioritaria(cp);
-    // }
+    while (!estaVaciaCP(cp)) {
+        TPersona persona = prioritaria(cp);
+        imprimirTPersona(persona);
+        printf("\n");
+        eliminarPrioritaria(cp);
+    }
 
     liberarCP(cp);
 }
