@@ -52,10 +52,15 @@ void liberarCP(TColaDePrioridadPersona &cp)
     {
       liberarTPersona(cp->array[i].persona);
     }
+    for (nat i = 0; i <= cp->tamanio; i++)
+    {
+      liberarTFecha(cp->array[i].fechaPrioridad);
+    }
   }
   delete[] cp->array;
   delete[] cp->prioridades;
   delete cp;
+  
 }
 TFecha obtenerFechaPrioridad(TPersona persona)
 {
