@@ -37,11 +37,17 @@ TColaDePrioridadPersona crearCP(nat N)
 
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
-   for (nat i = 1; i <= cp->cant; i++){
-      TFecha aux = cp->prioridades[i];
-      cp->prioridades[i] = cp->prioridades[cp->cant - i + 1];
-      cp->prioridades[cp->cant - i + 1] = aux;
-   }
+  nat inicio = 1;
+  nat fin = cp->cant;
+  while (inicio < fin)
+  {
+    Elem aux = cp->array[inicio];
+    cp->array[inicio] = cp->array[fin];
+    cp->array[fin] = aux;
+    inicio++;
+    fin--;
+  }
+   
 }
 
 void liberarCP(TColaDePrioridadPersona &cp)
