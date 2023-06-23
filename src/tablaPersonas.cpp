@@ -36,7 +36,7 @@ TTablaPersonas crearTTablaPersonas(int max)
 
 void insertarPersonaEnTabla(TTablaPersonas &tabla, TPersona persona)
 {
-    nat pos = funcionDeDispersion(nombreTPersona(persona));
+    nat pos = funcionDeDispersion(nombreTPersona(persona)) % tabla->tamanio;
     insertarTPersonasLDE(tabla->array[pos], persona, 1);
     tabla->cant++;
 }
