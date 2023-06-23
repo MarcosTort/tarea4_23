@@ -68,7 +68,6 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
   Elem swap = cp->array[iter];
   while (iter > 1 && (compararConInversion(cp->prioridades[idTPersona(cp->array[iter / 2].persona)], cp->prioridades[idTPersona(swap.persona)], cp->invertido) == 1))
   {
-    printf("Iter: %d\n", iter);
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
   }
@@ -76,14 +75,14 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 }
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
-  imprimirColaDePrioridadPersona(cp);
+  // imprimirColaDePrioridadPersona(cp);
   cp->invertido = !cp->invertido;
   nat tope = cp->cant;
   for (nat i = tope; (nat)tope / 2 < i; --i)
   {
     filtradoAscendente(cp, i);
   }
-  imprimirColaDePrioridadPersona(cp);
+  // imprimirColaDePrioridadPersona(cp);
 }
 
 void liberarCP(TColaDePrioridadPersona &cp)
