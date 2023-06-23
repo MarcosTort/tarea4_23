@@ -152,5 +152,5 @@ bool estaEnCP(nat id, TColaDePrioridadPersona cp)
 
 TFecha prioridad(nat id, TColaDePrioridadPersona cp)
 {
-  return obtenerFechaPrioridad(cp->array[id].persona);
+  return cp->prioridades[id];
 }
