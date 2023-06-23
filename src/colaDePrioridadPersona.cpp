@@ -29,7 +29,7 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->array[0].fechaPrioridad = NULL;
   cp->array[0].persona = NULL;
   cp->invertido = false;
-  for (nat i = 1; i <= N + 1; i++)
+  for (nat i = 0; i <= N + 1; i++)
   {
     cp->prioridades[i] = NULL;
   }
@@ -53,7 +53,7 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 {
   nat iter = i;
   Elem swap = cp->array[iter];
-  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) <= -1) && (cp->array[iter / 2].persona != NULL))
+  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) == -1) && (cp->array[iter / 2].persona != NULL))
   {
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
@@ -88,7 +88,6 @@ void liberarCP(TColaDePrioridadPersona &cp)
 void insertarEnCP(TPersona persona, TColaDePrioridadPersona &cp)
 {
   cp->cant = cp->cant + 1;
-  cp->prioridades[idTPersona(persona)] = obtenerFechaPrioridad(persona);
   cp->array[cp->cant].persona = persona;
   cp->array[cp->cant].fechaPrioridad = obtenerFechaPrioridad(persona);
   cp->prioridades[idTPersona(persona)] = obtenerFechaPrioridad(persona);
