@@ -277,7 +277,14 @@ TPersona obtenerFinalDeTPersonasLDE(TPersonasLDE personas)
 /////////////  NUEVAS FUNCIONES  //////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nombre[100]){
+void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nombre[100])
+{
+
+    if (personas->inicio == NULL)
+    {
+        return;
+    }
+
     Nodo aux = personas->inicio;
     while (aux != NULL)
     {
@@ -303,7 +310,8 @@ void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nom
     }
 }
 
-bool estaPersonaConNombreEnTPersonasLDE(TPersonasLDE personas, const char nombre[100]){
+bool estaPersonaConNombreEnTPersonasLDE(TPersonasLDE personas, const char nombre[100])
+{
     Nodo aux = personas->inicio;
     while (aux != NULL)
     {
@@ -316,7 +324,8 @@ bool estaPersonaConNombreEnTPersonasLDE(TPersonasLDE personas, const char nombre
     return false;
 }
 
-TPersona obtenerPersonaConNombreTPersonasLDE(TPersonasLDE personas, const char nombre[100]){
+TPersona obtenerPersonaConNombreTPersonasLDE(TPersonasLDE personas, const char nombre[100])
+{
     Nodo aux = personas->inicio;
     while (aux != NULL)
     {
@@ -332,4 +341,3 @@ TPersona obtenerPersonaConNombreTPersonasLDE(TPersonasLDE personas, const char n
 ///////////////////////////////////////////////////////////////////////////
 /////////////  FIN NUEVAS FUNCIONES  //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-
