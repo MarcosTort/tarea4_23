@@ -84,6 +84,10 @@ void aumentarTFecha(TFecha &fecha, nat dias)
 
 int compararTFechas(TFecha fecha1, TFecha fecha2)
 {
+    if (fecha1 == NULL || fecha2 == NULL)
+    {
+        return 0;
+    }
     nat res = 0;
     if (fecha1->anio > fecha2->anio)
     {
