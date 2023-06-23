@@ -68,6 +68,7 @@ void liberarTTablaPersonas(TTablaPersonas &tabla)
     }
     delete[] tabla->array;
     delete tabla;
+    tabla = NULL;
 }
 
 void imprimirTTablaPersonas(TTablaPersonas tabla)
