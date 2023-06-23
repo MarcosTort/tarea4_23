@@ -49,7 +49,7 @@ int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
   return compararTFechas(fecha1, fecha2);
 }
 
-void filtradoAscendente(TColaDePrioridadPersona cp, nat i)
+void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 {
 
   while ((compararConInversion(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad, cp->invertido) == 1) && (cp->array[i / 2].persona != NULL))
