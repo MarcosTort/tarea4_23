@@ -50,13 +50,13 @@ void eliminarPersonaDeTTablaPersonas(TTablaPersonas &tabla, const char nombre[10
 
 bool perteneceATTablaPersonas(TTablaPersonas tabla, const char nombre[100])
 {
-    nat pos = funcionDeDispersion(nombre);
+    nat pos = funcionDeDispersion(nombre)% tabla->tamanio;
     return estaPersonaConNombreEnTPersonasLDE(tabla->array[pos], nombre);
 }
 
 TPersona obtenerPersonaDeTTablaPersonas(TTablaPersonas tabla, const char nombre[100])
 {
-    nat pos = funcionDeDispersion(nombre);
+    nat pos = funcionDeDispersion(nombre)% tabla->tamanio;
     return obtenerPersonaConNombreTPersonasLDE(tabla->array[pos], nombre);
 }
 
