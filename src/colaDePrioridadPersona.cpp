@@ -54,11 +54,11 @@ void filtradoAscendente(TColaDePrioridadPersona cp, nat i){
 }
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
-  cp->invertido = !cp->invertido;
-  nat tope = cp->tamanio;
-  // for(nat i; (nat)tope/2 >= i; i++){
+  // cp->invertido = !cp->invertido;
+  // nat tope = cp->tamanio;
+  // // for(nat i; (nat)tope/2 >= i; i++){
     
-  // }
+  // // }
  
 }
 
