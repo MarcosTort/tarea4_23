@@ -40,11 +40,24 @@ TColaDePrioridadPersona crearCP(nat N)
   }
   return cp;
 }
+void imprimirColaDePrioridadPersona(TColaDePrioridadPersona cp)
+{
+  for (nat i = 1; i <= cp->cant; i++)
+  {
+    printf("##############\n");
+    imprimirTPersona(cp->array[i].persona);
+    printf("Prioridad: ");
+    imprimirTFecha(cp->array[i].fechaPrioridad);
+    printf("\n");
+
+    printf("##############\n");
+  }
+}
 int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
 {
   if (invertido)
   {
-    return -1*compararTFechas(fecha1, fecha2);
+    return -1 * compararTFechas(fecha1, fecha2);
   }
   return compararTFechas(fecha1, fecha2);
 }
@@ -62,12 +75,14 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 }
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
+  imprimirColaDePrioridadPersona(cp);
   cp->invertido = !cp->invertido;
   nat tope = cp->cant;
   for (nat i = tope; (nat)tope / 2 < i; --i)
   {
     filtradoAscendente(cp, i);
   }
+  imprimirColaDePrioridadPersona(cp);
 }
 
 void liberarCP(TColaDePrioridadPersona &cp)
@@ -107,7 +122,7 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
-  
+
   return cp->array[1].persona;
 }
 
