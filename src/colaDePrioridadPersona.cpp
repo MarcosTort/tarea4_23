@@ -113,8 +113,8 @@ void eliminarPrioritaria(TColaDePrioridadPersona &cp)
     cp->prioridades[idTPersona(cp->array[iter].persona)] = obtenerFechaPrioridad(cp->array[iter].persona);
   }
   cp->array[iter] = ult;
-  liberarTPersona(min.persona);
   cp->prioridades[idTPersona(min.persona)] = NULL;
+  liberarTPersona(min.persona);
   cp->cant--;
 }
 
