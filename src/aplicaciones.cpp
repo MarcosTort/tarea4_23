@@ -22,7 +22,6 @@ void listarEnOrden(TTablaPersonas t, char** nombres, nat n) {
     while (!estaVaciaCP(cp)) {
         TPersona persona = prioritaria(cp);
         imprimirTPersona(persona);
-        printf("\n");
         eliminarPrioritaria(cp);
     }
 
