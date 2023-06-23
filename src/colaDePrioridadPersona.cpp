@@ -40,7 +40,7 @@ TColaDePrioridadPersona crearCP(nat N)
   }
   return cp;
 }
-nat compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
+int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
 {
   if (invertido)
   {
