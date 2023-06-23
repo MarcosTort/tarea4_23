@@ -1,0 +1,194 @@
+# implementar invertirPrioridad
+
+crearColaPrioridad 10
+
+# creo Persona 5 y agrego a cola
+crearAgenda
+crearPersona 5 10 Persona5
+crearFecha 5/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 6 y agrego a cola
+crearAgenda
+crearPersona 6 10 Persona6
+crearFecha 6/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# la prioritaria es la Persona 5
+imprimirPersonaPrioritaria
+
+# elimino la persona prioritaria 2 veces y la cola queda vacia
+eliminarPersonaPrioritaria
+eliminarPersonaPrioritaria
+estaVaciaColaPrioridad
+
+# invierto la prioridad de la cola, la fecha mayor es prioritaria
+invertirPrioridad
+
+# creo Persona 5 y agrego a cola
+crearAgenda
+crearPersona 5 10 Persona5
+crearFecha 5/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 6 y agrego a cola
+crearAgenda
+crearPersona 6 10 Persona6
+crearFecha 6/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# ahora la prioritaria es la Persona 6
+imprimirPersonaPrioritaria
+
+# creo Persona 3 y agrego a cola
+crearAgenda
+crearPersona 3 10 Persona3
+crearFecha 9/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 2 y agrego a cola
+crearAgenda
+crearPersona 2 10 Persona2
+crearFecha 5/10/2020
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 10 y agrego a cola
+crearAgenda
+crearPersona 10 10 Persona10
+crearFecha 19/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# la prioritaria es la persona 10
+imprimirPersonaPrioritaria
+
+# la fecha prioritaria de la persona 10 es 19/10/2022
+imprimirPrioridadPersona 10
+
+# la fecha prioritaria de la persona 5 es 5/10/2022
+imprimirPrioridadPersona 5
+
+# elimino la persona prioritaria y verifico
+eliminarPersonaPrioritaria
+estaPersonaEnColaPrioridad 10
+
+# ahora la prioritaria es la persona 3
+imprimirPersonaPrioritaria
+
+# elimino 3 veces la prioritaria y verifico que la cola no es vacía
+eliminarPersonaPrioritaria
+eliminarPersonaPrioritaria
+eliminarPersonaPrioritaria
+estaVaciaColaPrioridad
+
+# elimino una mas y ahora si es vacia
+eliminarPersonaPrioritaria
+estaVaciaColaPrioridad
+
+# invierto nuevamente la prioridad y agrego las personas nuevamente
+invertirPrioridad
+
+# creo Persona 5 y agrego a cola
+crearAgenda
+crearPersona 5 10 Persona5
+crearFecha 5/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 6 y agrego a cola
+crearAgenda
+crearPersona 6 10 Persona6
+crearFecha 6/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# ahora la prioritaria es la Persona 5
+imprimirPersonaPrioritaria
+
+# creo Persona 3 y agrego a cola
+crearAgenda
+crearPersona 3 10 Persona3
+crearFecha 9/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 2 y agrego a cola
+crearAgenda
+crearPersona 2 10 Persona2
+crearFecha 5/10/2020
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 10 y agrego a cola
+crearAgenda
+crearPersona 10 10 Persona10
+crearFecha 19/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# ahora la prioritaria es la persona 2
+imprimirPersonaPrioritaria
+
+# invierto la prioridad en una cola con elementos, debe modificar la cola y la prioritaria es la persona 10
+invertirPrioridad
+imprimirPersonaPrioritaria
+
+# elimino la persona prioritaria y ahora la nueva prioritaria es 3
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+# la fecha de prioridad de 3 es 9/10/2022
+imprimirPrioridadPersona 3
+
+# voy eliminando y verificando, el orden es 6, 5, 2 y 10
+
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+# queda un elemento en la cola
+estaVaciaColaPrioridad
+
+eliminarPersonaPrioritaria
+
+# ahora la cola esta vacia
+estaVaciaColaPrioridad
+
+liberarColaPrioridad
+
+Fin

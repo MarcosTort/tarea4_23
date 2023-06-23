@@ -1,0 +1,84 @@
+1>#  implementar prioritaria, prioridad, insertarEnCP.
+2>3>#  creo Persona 5.
+4>5>6>7>8>9>Persona 5: Persona5, 10 años
+Evento 1:  Evento1
+Fecha: 15/10/2022
+10>#  inserto persona en cola.
+11>12>#  creo Persona 25 .
+13>14>15>16>17>18>Persona 25: Persona25, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2022
+19>20>#  la persona prioritaria es la 25.
+21>Persona 25: Persona25, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2022
+22>#  creo Persona 11.
+23>24>25>26>27>28>Persona 11: Persona11, 10 años
+Evento 1:  Evento1
+Fecha: 15/10/2022
+29>#  inserto persona en cola.
+30>31>#  la persona prioritaria sigue siendo 25.
+32>Persona 25: Persona25, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2022
+33>#  se imprime la fecha de mayor prioridad de persona 5.
+34>15/10/2022
+35>#  Persona 5 está en la cola.
+36>La persona 5 está en la cola de prioridad.
+37>#  creo Persona 6 e inserto en cola.
+38>39>40>41>42>43>Persona 6: Persona6, 10 años
+Evento 1:  Evento1
+Fecha: 1/10/2022
+44>45>#  ahora la persona prioritaria es la 6.
+46>Persona 6: Persona6, 10 años
+Evento 1:  Evento1
+Fecha: 1/10/2022
+47>#  la fecha de la persona 6 es la de mayor prioridad.
+48>1/10/2022
+49>#  creo Persona 8 como mas prioritaria y agrego a cola.
+50>51>52>53>54>55>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 1/10/2020
+56>57>#  creo Persona 7 y agrego a cola.
+58>59>60>61>62>63>Persona 7: Persona7, 10 años
+Evento 1:  Evento1
+Fecha: 7/10/2022
+64>65>#  creo Persona 10 y agrego a cola.
+66>67>68>69>70>71>Persona 10: Persona10, 10 años
+Evento 1:  Evento1
+Fecha: 10/9/2022
+72>73>#  creo Persona 1 y agrego a cola.
+74>75>76>77>78>79>Persona 1: Persona1, 10 años
+Evento 1:  Evento1
+Fecha: 12/10/2022
+80>81>#  creo Persona 2 y agrego a cola.
+82>83>84>85>86>87>Persona 2: Persona2, 10 años
+Evento 1:  Evento1
+Fecha: 2/10/2022
+88>89>#  creo Persona 9 y agrego a cola.
+90>91>92>93>94>95>Persona 9: Persona9, 10 años
+Evento 1:  Evento1
+Fecha: 9/10/2022
+96>97>#  creo Persona 3 y agrego a cola.
+98>99>100>101>102>103>Persona 3: Persona3, 10 años
+Evento 1:  Evento1
+Fecha: 3/10/2022
+104>105>#  creo Persona 4 y agrego a cola.
+106>107>108>109>110>111>Persona 4: Persona4, 10 años
+Evento 1:  Evento1
+Fecha: 4/10/2022
+112>113>#  ahora la persona prioritaria es la 8.
+114>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 1/10/2020
+115>#  la fecha de la persona 8 es la de mayor prioridad.
+116>1/10/2020
+117>#  verifico que la persona 1 está en la cola.
+118>La persona 1 está en la cola de prioridad.
+119>#  la fecha de la persona 1.
+120>12/10/2022
+121>#  verifico que la persona 10 está en la cola.
+122>La persona 10 está en la cola de prioridad.
+123>#  la fecha de la persona 10.
+124>10/9/2022
+125>126>Fin.

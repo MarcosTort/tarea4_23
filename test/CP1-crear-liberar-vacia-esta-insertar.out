@@ -1,0 +1,33 @@
+1>#  implementar crearCP, liberarCP, estaVaciaCP, estaEnCP, insertarEnCP.
+2>3>#  chequeo con cola vacía.
+4>La cola de prioridad está vacía.
+5>La persona 5 no está en la cola de prioridad.
+6>#  creo Persona 5 para ser mas prioritaria.
+7>8>9>10>11>12>Persona 5: Matias, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2022
+13>#  inserto la persona en la cola.
+14>15>#  ahora la cola no está vacía.
+16>La cola de prioridad no está vacía.
+17>#  chequeo varias personas en la cola.
+18>La persona 5 está en la cola de prioridad.
+19>La persona 6 no está en la cola de prioridad.
+20>La persona 11 no está en la cola de prioridad.
+21>La persona 0 no está en la cola de prioridad.
+22>#  creo Persona 1 para ser segunda en prioridad.
+23>24>25>26>27>28>Persona 1: Pedro, 20 años
+Evento 1:  Evento1
+Fecha: 22/3/2045
+29>#  inserto en cola.
+30>31>#  creo Persona 11 para ser igual en prioridad a anterior.
+32>33>34>35>36>37>Persona 11: Maria, 2 años
+Evento 1:  Evento1
+Fecha: 22/3/2045
+38>#  inserto en cola.
+39>40>#  testeo varias personas en cola.
+41>La persona 5 está en la cola de prioridad.
+42>La persona 6 no está en la cola de prioridad.
+43>La persona 11 está en la cola de prioridad.
+44>La persona 1 está en la cola de prioridad.
+45>La persona 0 no está en la cola de prioridad.
+46>47>Fin.

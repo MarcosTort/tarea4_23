@@ -1,0 +1,70 @@
+crearListaPersonas
+
+# creo 8 personas y las agrego a la lista
+
+crearPersona 1 11 Persona1
+insertarPersonaListaPersonas 1
+
+crearPersona 2 22 Persona2
+insertarPersonaListaPersonas 2
+
+crearPersona 3 33 Persona3
+insertarPersonaListaPersonas 3
+
+crearPersona 4 44 Persona4
+insertarPersonaListaPersonas 4
+
+crearPersona 5 55 Persona5
+insertarPersonaListaPersonas 5
+
+crearPersona 6 66 Persona6
+insertarPersonaListaPersonas 6
+
+crearPersona 7 77 Persona7
+insertarPersonaListaPersonas 7
+
+crearPersona 8 88 Persona8
+insertarPersonaListaPersonas 8
+
+# imprimo la cantidad y la lista
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+# verifico que esten 4 personas distintas y las obtengo 
+
+estaPersonaConNombreEnTPersonasLDE Persona1
+obtenerPersonaConNombreTPersonasLDE Persona1
+
+estaPersonaConNombreEnTPersonasLDE Persona3
+obtenerPersonaConNombreTPersonasLDE Persona3
+
+estaPersonaConNombreEnTPersonasLDE Persona6
+obtenerPersonaConNombreTPersonasLDE Persona6
+
+estaPersonaConNombreEnTPersonasLDE Persona8
+obtenerPersonaConNombreTPersonasLDE Persona8
+
+# ahora elimino a esas personas y verifico que no estan mas
+
+eliminarPersonaConNombreTPersonasLDE Persona1
+estaPersonaConNombreEnTPersonasLDE Persona1
+
+eliminarPersonaConNombreTPersonasLDE Persona3
+estaPersonaConNombreEnTPersonasLDE Persona3
+
+eliminarPersonaConNombreTPersonasLDE Persona6
+estaPersonaConNombreEnTPersonasLDE Persona6
+
+eliminarPersonaConNombreTPersonasLDE Persona8
+estaPersonaConNombreEnTPersonasLDE Persona8
+
+# imprimo la cantidad y la lista
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+# libero la lista
+liberarListaPersonas
+
+Fin

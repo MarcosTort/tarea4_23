@@ -1,0 +1,45 @@
+# creo una tabla de tamanio 4
+crearTTablaPersonas 4
+
+# creo una persona Juan y la inserto en la tabla
+crearPersona 4 4 Juan
+insertarPersonaEnTabla
+
+# creo una persona Maria y la inserto en la tabla
+crearPersona 5 5 Maria
+insertarPersonaEnTabla
+
+# imprimo la tabla (se imprime primero a María y luego a Juan)
+imprimirTTablaPersonas
+
+# libero la tabla
+liberarTTablaPersonas
+
+#
+#
+#
+#
+
+# creo una tabla de tamanio 4
+crearTTablaPersonas 4
+
+# creo una persona juan y la inserto en la tabla
+crearPersona 4 4 juan
+insertarPersonaEnTabla
+
+# creo una persona maria y la inserto en la tabla
+crearPersona 5 5 maria
+insertarPersonaEnTabla
+
+# creo una persona ariam y la inserto en la tabla
+# como ariam tiene las mismas letras que maria se produce una colision
+crearPersona 7 7 ariam
+insertarPersonaEnTabla
+
+# imprimo la tabla (se imprimen en orden: ariam, maria y juan, ya que ariam es mas reciente que maria)
+imprimirTTablaPersonas
+
+# libero la tabla
+liberarTTablaPersonas
+
+Fin

@@ -1,0 +1,13 @@
+# creo una tabla de tamanio 4
+crearTTablaPersonas 4
+
+# libero la tabla
+liberarTTablaPersonas
+
+# creo una tabla de tamanio 15
+crearTTablaPersonas 15
+
+# libero la tabla
+liberarTTablaPersonas
+
+Fin

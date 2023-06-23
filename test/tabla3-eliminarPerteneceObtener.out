@@ -1,0 +1,43 @@
+1>#  creo una tabla de tamanio 4.
+2>3>#  creo una persona mario y la inserto en la tabla.
+4>5>6>#  creo una persona maria y la inserto en la tabla.
+7>8>9>#  creo una persona ariam y la inserto en la tabla.
+10>#  como ariam tiene las mismas letras que maria se produce una colision.
+11>12>13>#  imprimo la tabla.
+14>Persona 4: mario, 4 años
+Persona 7: ariam, 7 años
+Persona 5: maria, 5 años
+15>#  verifico que las 3 personas pertenezcan a la tabla y las obtengo.
+16>#  .
+17>#  verifico que mario este en la tabla.
+18>La persona con nombre mario está en la tabla.
+19>Persona 4: mario, 4 años
+20>#  verifico que ariam este en la tabla.
+21>La persona con nombre ariam está en la tabla.
+22>Persona 7: ariam, 7 años
+23>#  verifico que maria este en la tabla.
+24>La persona con nombre maria está en la tabla.
+25>Persona 5: maria, 5 años
+26>#  verifico que juan no este en la tabla.
+27>La persona con nombre juan NO está en la tabla.
+28>#  
+.
+29># 
+.
+30>#  Ahora probamos el eliminar.
+31># 
+.
+32># 
+.
+33>#  elimino a maria de la tabla .
+34>35>#  verifico que maria no esta en la tabla.
+36>La persona con nombre maria NO está en la tabla.
+37>#  verifico que ariam sigue en la tabla.
+38>La persona con nombre ariam está en la tabla.
+39>Persona 7: ariam, 7 años
+40>#  elimino a ariam y a mario de la tabla.
+41>42>43>#  verifico que ninguno sigue en la tabla.
+44>La persona con nombre ariam NO está en la tabla.
+45>La persona con nombre mario NO está en la tabla.
+46>#  libero la tabla.
+47>48>Fin.

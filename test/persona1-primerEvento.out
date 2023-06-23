@@ -1,0 +1,21 @@
+1>#  creo Persona con 3 eventos.
+2>3>4>5>6>7>8>9>10>11>12>13>#  los eventos quedan en orden 3, 2, 1.
+14>Persona 1: Maria, 2 años
+Evento 3:  Evento3
+Fecha: 20/3/2020
+Evento 2:  Evento2
+Fecha: 20/3/2045
+Evento 1:  Evento1
+Fecha: 22/3/2045
+15>#  imprimo el evento 3.
+16>Evento 3:  Evento3
+Fecha: 20/3/2020
+17>#  remuevo el ultimo evento.
+18>19>#  imprimo el evento 3.
+20>Evento 3:  Evento3
+Fecha: 20/3/2020
+21>#  remuevo el primer evento.
+22>23>#  imprimo el evento 2.
+24>Evento 2:  Evento2
+Fecha: 20/3/2045
+25>26>Fin.

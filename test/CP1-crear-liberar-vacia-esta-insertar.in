@@ -1,0 +1,60 @@
+# implementar crearCP, liberarCP, estaVaciaCP, estaEnCP, insertarEnCP
+
+crearColaPrioridad 11
+
+# chequeo con cola vacía
+estaVaciaColaPrioridad
+estaPersonaEnColaPrioridad 5
+
+# creo Persona 5 para ser mas prioritaria
+crearAgenda
+crearPersona 5 10 Matias
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+
+# inserto la persona en la cola
+insertarColaPrioridad
+
+# ahora la cola no está vacía
+estaVaciaColaPrioridad
+
+# chequeo varias personas en la cola
+estaPersonaEnColaPrioridad 5
+estaPersonaEnColaPrioridad 6
+estaPersonaEnColaPrioridad 11
+estaPersonaEnColaPrioridad 0
+
+# creo Persona 1 para ser segunda en prioridad
+crearAgenda
+crearPersona 1 20 Pedro
+crearFecha 22/3/2045
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+
+# inserto en cola
+insertarColaPrioridad
+
+# creo Persona 11 para ser igual en prioridad a anterior
+crearAgenda
+crearPersona 11 2 Maria
+crearFecha 22/3/2045
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+
+# inserto en cola
+insertarColaPrioridad
+
+# testeo varias personas en cola
+estaPersonaEnColaPrioridad 5
+estaPersonaEnColaPrioridad 6
+estaPersonaEnColaPrioridad 11
+estaPersonaEnColaPrioridad 1
+estaPersonaEnColaPrioridad 0
+
+liberarColaPrioridad
+
+Fin

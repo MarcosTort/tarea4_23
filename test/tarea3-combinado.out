@@ -1,0 +1,171 @@
+1>2>1/2/2023
+3>La fecha copiada es: 1/2/2023
+4>La nueva fecha aplazada 28 dias es: 1/3/2023
+5>La fecha copiada es: 1/3/2023
+6>7>#  año bisiesto.
+8>9>1/2/2024
+10>La nueva fecha aplazada 28 dias es: 29/2/2024
+11>12>#  mas de un mes.
+13>14>18/12/2023
+15>La nueva fecha aplazada 50 dias es: 6/2/2024
+16>17>#  mas de un mes y bisiesto.
+18>19>18/12/2023
+20>La fecha copiada es: 18/12/2023
+21>La nueva fecha aplazada 73 dias es: 29/2/2024
+22>La fecha copiada es: 29/2/2024
+23>24>#  mas de un año.
+25>26>18/12/2022
+27>La nueva fecha aplazada 366 dias es: 19/12/2023
+28>29>#  mas de un año y bisiesto.
+30>31>18/12/2023
+32>La nueva fecha aplazada 366 dias es: 18/12/2024
+33>34>35>36>El evento copiado es: Evento 1:  Descripcion 1
+Fecha: 22/3/2023
+37>La fecha del evento es: 22/3/2023
+38>39>La fecha del evento es: 21/4/2023
+40>41>Evento 1:  Descripcion 1
+Fecha: 1/5/2023
+42>El evento copiado es: Evento 1:  Descripcion 1
+Fecha: 1/5/2023
+43>44>#  año bisiesto .
+45>46>47>La fecha del evento es: 1/2/2024
+48>49>La fecha del evento es: 29/2/2024
+50>El evento copiado es: Evento 2:  Descripcion 2
+Fecha: 29/2/2024
+51>52>Evento 2:  Descripcion 2
+Fecha: 1/3/2024
+53>El evento copiado es: Evento 2:  Descripcion 2
+Fecha: 1/3/2024
+54>55>56>El evento con id 1 NO está en la agenda.
+57>58>59>60>El evento con id 1 está en la agenda.
+61>62>63>64>65>66>67>68>69>70>Evento 4:  Descripcion cuatro
+Fecha: 31/12/2022
+Evento 2:  Descripcion dos
+Fecha: 15/4/2023
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+Evento 3:  Descripcion tres
+Fecha: 21/4/2023
+71>La nueva fecha del evento 4 pospuesto 109 dias es: 19/4/2023
+72>Evento 2:  Descripcion dos
+Fecha: 15/4/2023
+Evento 4:  Descripcion cuatro
+Fecha: 19/4/2023
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+Evento 3:  Descripcion tres
+Fecha: 21/4/2023
+73>No se encontraron eventos en la fecha determinada.
+74>Evento 4:  Descripcion cuatro
+Fecha: 19/4/2023
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+75>El evento con id 1 se removió de la agenda.
+76>Evento 2:  Descripcion dos
+Fecha: 15/4/2023
+Evento 4:  Descripcion cuatro
+Fecha: 19/4/2023
+Evento 3:  Descripcion tres
+Fecha: 21/4/2023
+77>78>79>80>Persona 1: Persona1, 20 años
+81>#  creo cuatro eventos para ingresarlos a la agenda de la persona.
+82>83>84>85>86>87>88>Persona 1: Persona1, 20 años
+Evento 1:  Descripcion uno
+Fecha: 22/3/2023
+Evento 2:  Descripcion dos
+Fecha: 23/3/2023
+89>90>91>92>93>94>95>Persona 1: Persona1, 20 años
+Evento 1:  Descripcion uno
+Fecha: 22/3/2023
+Evento 2:  Descripcion dos
+Fecha: 23/3/2023
+Evento 3:  Descripcion tres
+Fecha: 24/3/2023
+Evento 4:  Descripcion cuatro
+Fecha: 1/4/2023
+96>#  chequéo si existen diferentes ids de eventos y los obtengo.
+97>El evento con id 3 está en la agenda de la persona.
+98>El evento con id 5 NO está en la agenda de la persona.
+99>El evento con id 4 está en la agenda de la persona.
+100>El evento con id 0 NO está en la agenda de la persona.
+101>Evento 3:  Descripcion tres
+Fecha: 24/3/2023
+102>Evento 1:  Descripcion uno
+Fecha: 22/3/2023
+103>104>105>106>107>108>109>110>111>112>113>114>115>116>117>118>119>120>121>122>123>124>125>126>127>128>129>La cantidad de personas en la lista es: 4.
+130>Persona 0: Persona0, 1 años
+Evento 0:  Descripcion0
+Fecha: 1/10/1100
+Persona 1: Persona1, 11 años
+Evento 1:  Descripcion1
+Fecha: 1/11/11
+Persona 2: Persona2, 22 años
+Evento 2:  Descripcion2
+Fecha: 2/22/22
+Persona 3: Persona3, 33 años
+Evento 3:  Descripcion3
+Fecha: 3/33/33
+131>La persona con id 3 está en la lista.
+132>La persona con id 5 NO está en la lista.
+133>La persona con id 4 NO está en la lista.
+134>La persona con id 0 está en la lista.
+135>136>137>La cantidad de personas en la lista es: 3.
+138>Persona 1: Persona1, 11 años
+Evento 1:  Descripcion1
+Fecha: 1/11/11
+Persona 2: Persona2, 22 años
+Evento 2:  Descripcion2
+Fecha: 2/22/22
+Persona 3: Persona3, 33 años
+Evento 3:  Descripcion3
+Fecha: 3/33/33
+139>140>Persona 2: Persona2, 22 años
+Evento 2:  Descripcion2
+Fecha: 2/22/22
+141>La cantidad de personas en la lista es: 2.
+142>Persona 1: Persona1, 11 años
+Evento 1:  Descripcion1
+Fecha: 1/11/11
+Persona 2: Persona2, 22 años
+Evento 2:  Descripcion2
+Fecha: 2/22/22
+143>144>145>La cantidad de personas en la lista es: 0.
+146>147>148>Persona 1: Juan, 20 años
+Persona 2: Pedro, 21 años
+Persona 3: Maria, 22 años
+149>La cantidad de personas en la lista es: 3.
+150>151>152>153>154>155>156>157>158>159>160>161>162>163>164>165>166>167>168>169>170>171>172>173>La cantidad de personas en la lista es: 4.
+174>Persona 2: Persona, 20 años
+Persona 1: Persona1, 18 años
+Evento 1:  Descripcion uno
+Fecha: 18/4/2023
+Persona 3: Persona3, 25 años
+Persona 4: Persona4, 30 años
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+Evento 2:  Descripcion dos
+Fecha: 20/4/2023
+175>#  imprime Persona 2.
+176>Persona 2: Persona, 20 años
+177>#  imprime Persona 4.
+178>Persona 4: Persona4, 30 años
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+Evento 2:  Descripcion dos
+Fecha: 20/4/2023
+179>180>#  imprime Persona 1.
+181>Persona 1: Persona1, 18 años
+Evento 1:  Descripcion uno
+Fecha: 18/4/2023
+182>183>#  imprime Persona 4.
+184>Persona 4: Persona4, 30 años
+Evento 1:  Descripcion uno
+Fecha: 19/4/2023
+Evento 2:  Descripcion dos
+Fecha: 20/4/2023
+185>186>#  imprime Persona 3.
+187>Persona 3: Persona3, 25 años
+188>189>#  imprime la misma persona.
+190>Persona 3: Persona3, 25 años
+191>Persona 3: Persona3, 25 años
+192>193>Fin.

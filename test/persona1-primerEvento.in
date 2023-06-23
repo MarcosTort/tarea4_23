@@ -1,0 +1,37 @@
+# creo Persona con 3 eventos
+crearAgenda
+crearPersona 1 2 Maria
+
+crearFecha 22/3/2045
+crearEvento 1 Evento1
+agregarEventoPersona
+
+crearFecha 20/3/2045
+crearEvento 2 Evento2
+agregarEventoPersona
+
+crearFecha 20/3/2020
+crearEvento 3 Evento3
+agregarEventoPersona
+
+# los eventos quedan en orden 3, 2, 1
+imprimirPersona
+
+# imprimo el evento 3
+imprimirPrimerEventoPersona
+
+# remuevo el ultimo evento
+removerEventoPersona 1
+
+# imprimo el evento 3
+imprimirPrimerEventoPersona
+
+# remuevo el primer evento
+removerEventoPersona 3
+
+# imprimo el evento 2
+imprimirPrimerEventoPersona
+
+liberarPersona
+
+Fin

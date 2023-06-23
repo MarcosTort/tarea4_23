@@ -1,0 +1,20 @@
+1>#  se asume un ID máximo de persona de 10.
+2>3>#  creo Persona 5 y agrego a tabla.
+4>5>6>7>8>9>10>#  creo Persona 6 y agrego a tabla.
+11>12>13>14>15>16>17>#  creo Persona 3 y agrego a tabla.
+18>19>20>21>22>23>Persona 3: Persona3, 10 años
+Evento 1:  Evento1
+Fecha: 9/10/2022
+24>25>#  creo Persona 2 y agrego a tabla.
+26>27>28>29>30>31>32>#  creo Persona 10 y agrego a tabla.
+33>34>35>36>37>38>39>#  el orden debe ser 2, 6, y 3.
+40>Persona 2: Persona2, 10 años
+Evento 1:  Evento1
+Fecha: 5/10/2020
+Persona 6: Persona6, 10 años
+Evento 1:  Evento1
+Fecha: 6/10/2022
+Persona 3: Persona3, 10 años
+Evento 1:  Evento1
+Fecha: 9/10/2022
+41>42>Fin.

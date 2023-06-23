@@ -1,0 +1,266 @@
+crearFecha 1/2/2023
+imprimirFecha
+copiarFecha
+aumentarDias 28
+copiarFecha
+liberarFecha
+
+# año bisiesto
+crearFecha 1/2/2024
+imprimirFecha
+aumentarDias 28
+liberarFecha
+
+# mas de un mes
+crearFecha 18/12/2023
+imprimirFecha
+aumentarDias 50
+liberarFecha
+
+# mas de un mes y bisiesto
+crearFecha 18/12/2023
+imprimirFecha
+copiarFecha
+aumentarDias 73
+copiarFecha
+liberarFecha
+
+# mas de un año
+crearFecha 18/12/2022
+imprimirFecha
+aumentarDias 366
+liberarFecha
+
+# mas de un año y bisiesto
+crearFecha 18/12/2023
+imprimirFecha
+aumentarDias 366
+liberarFecha
+
+crearFecha 22/3/2023
+crearEvento 1 Descripcion 1
+copiarEvento
+imprimirFechaEvento
+posponerEvento 30
+imprimirFechaEvento
+posponerEvento 10
+imprimirEvento
+copiarEvento
+liberarEvento
+
+# año bisiesto 
+
+crearFecha 01/02/2024
+crearEvento 2 Descripcion 2
+imprimirFechaEvento
+posponerEvento 28
+imprimirFechaEvento
+copiarEvento
+posponerEvento 1
+imprimirEvento
+copiarEvento
+liberarEvento
+
+crearAgenda
+
+estaEnAgenda 1
+
+crearFecha 19/4/2023
+crearEvento 1 Descripcion uno
+agregarEnAgenda
+
+estaEnAgenda 1
+
+crearFecha 15/4/2023
+crearEvento 2 Descripcion dos
+agregarEnAgenda
+
+crearFecha 21/4/2023
+crearEvento 3 Descripcion tres
+agregarEnAgenda
+
+crearFecha 31/12/2022
+crearEvento 4 Descripcion cuatro
+agregarEnAgenda
+
+imprimirAgenda
+
+posponerEnAgenda 4 109
+
+imprimirAgenda
+
+hayEventosFechaAgenda 31/12/2022
+
+imprimirEventosFechaAgenda 19/4/2023
+
+removerDeAgenda 1
+
+imprimirCopiaAgenda
+
+liberarAgenda
+
+crearAgenda
+
+crearPersona 1 20 Persona1
+
+imprimirCopiaPersona
+
+# creo cuatro eventos para ingresarlos a la agenda de la persona
+
+crearFecha 22/3/2023
+crearEvento 1 Descripcion uno
+agregarEventoPersona
+
+crearFecha 23/3/2023
+crearEvento 2 Descripcion dos
+agregarEventoPersona
+
+imprimirCopiaPersona
+
+crearFecha 24/3/2023
+crearEvento 3 Descripcion tres
+agregarEventoPersona
+
+crearFecha 1/4/2023
+crearEvento 4 Descripcion cuatro
+agregarEventoPersona
+
+imprimirCopiaPersona
+
+# chequéo si existen diferentes ids de eventos y los obtengo
+
+estaEnAgendaPersona 3
+estaEnAgendaPersona 5
+estaEnAgendaPersona 4
+estaEnAgendaPersona 0
+
+imprimirEventoPersona 3
+imprimirEventoPersona 1
+
+liberarPersona
+
+crearListaPersonas
+
+crearAgenda
+crearPersona 1 11 Persona1
+crearFecha 1/11/11
+crearEvento 1 Descripcion1
+agregarEventoPersona
+insertarPersonaListaPersonas 3
+
+crearAgenda
+crearPersona 2 22 Persona2
+crearFecha 2/22/22
+crearEvento 2 Descripcion2
+agregarEventoPersona
+insertarPersonaListaPersonas 2
+
+crearAgenda
+crearPersona 3 33 Persona3
+crearFecha 3/33/33
+crearEvento 3 Descripcion3
+agregarEventoPersona
+insertarPersonaListaPersonas 3
+
+crearAgenda
+crearPersona 0 01 Persona0
+crearFecha 01/10/1100
+crearEvento 0 Descripcion0
+agregarEventoPersona
+insertarPersonaListaPersonas 1
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+estaEnListaPersonas 3
+estaEnListaPersonas 5
+estaEnListaPersonas 4
+estaEnListaPersonas 0
+
+concatenarConVacioListaPersonas
+
+eliminarInicioListaPersonas
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+eliminarFinalListaPersonas
+
+imprimirPersonaListaPersonas 2
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+eliminarFinalListaPersonas
+eliminarFinalListaPersonas
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+crearYConcatenarListaPersonas
+
+imprimirListaPersonas
+imprimirCantidadListaPersonas
+
+liberarListaPersonas
+
+crearListaPersonas
+
+crearAgenda
+crearPersona 1 18 Persona1
+crearFecha 18/4/2023
+crearEvento 1 Descripcion uno
+agregarEventoPersona
+insertarPersonaInicioListaPersonas
+
+crearAgenda
+crearPersona 2 20 Persona 2
+insertarPersonaInicioListaPersonas
+
+crearAgenda
+crearPersona 3 25 Persona3
+insertarPersonaFinalListaPersonas
+
+crearAgenda
+crearPersona 4 30 Persona4
+crearFecha 19/4/2023
+crearEvento 1 Descripcion uno
+agregarEventoPersona
+crearFecha 20/4/2023
+crearEvento 2 Descripcion dos
+agregarEventoPersona
+insertarPersonaFinalListaPersonas
+
+imprimirCantidadListaPersonas
+imprimirListaPersonas
+
+# imprime Persona 2
+imprimirInicioListaPersonas
+
+# imprime Persona 4
+imprimirFinalListaPersonas
+
+eliminarInicioListaPersonas
+
+# imprime Persona 1
+imprimirInicioListaPersonas
+
+concatenarConVacioListaPersonas
+
+# imprime Persona 4
+imprimirFinalListaPersonas
+
+eliminarFinalListaPersonas
+
+# imprime Persona 3
+imprimirFinalListaPersonas
+
+eliminarInicioListaPersonas
+
+# imprime la misma persona
+imprimirInicioListaPersonas
+imprimirFinalListaPersonas
+
+liberarListaPersonas
+
+Fin

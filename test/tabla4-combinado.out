@@ -1,0 +1,47 @@
+1>#  creo una tabla de tamanio 10.
+2>3>#  creo 10 personas, las inserto en la tabla, verifico que pertenezcan y las obtengo.
+4>5>6>La persona con nombre Persona1 está en la tabla.
+7>Persona 1: Persona1, 11 años
+8>9>10>La persona con nombre Persona2 está en la tabla.
+11>Persona 2: Persona2, 22 años
+12>13>14>La persona con nombre Persona3 está en la tabla.
+15>Persona 3: Persona3, 33 años
+16>17>18>La persona con nombre Persona4 está en la tabla.
+19>Persona 4: Persona4, 44 años
+20>21>22>La persona con nombre Persona5 está en la tabla.
+23>Persona 5: Persona5, 55 años
+24>25>26>La persona con nombre Persona6 está en la tabla.
+27>Persona 6: Persona6, 66 años
+28>29>30>La persona con nombre Persona7 está en la tabla.
+31>Persona 7: Persona7, 77 años
+32>33>34>La persona con nombre Persona8 está en la tabla.
+35>Persona 8: Persona8, 88 años
+36>37>38>La persona con nombre Persona9 está en la tabla.
+39>Persona 9: Persona9, 99 años
+40>41>42>La persona con nombre Persona10 está en la tabla.
+43>Persona 10: Persona10, 100 años
+44>#  imprimo la tabla en el orden que quedaron insertados.
+45>Persona 4: Persona4, 44 años
+Persona 5: Persona5, 55 años
+Persona 6: Persona6, 66 años
+Persona 7: Persona7, 77 años
+Persona 8: Persona8, 88 años
+Persona 10: Persona10, 100 años
+Persona 9: Persona9, 99 años
+Persona 1: Persona1, 11 años
+Persona 2: Persona2, 22 años
+Persona 3: Persona3, 33 años
+46>#  elimino las personas de id par y verifico que no pertenecen.
+47>48>La persona con nombre Persona2 NO está en la tabla.
+49>50>La persona con nombre Persona4 NO está en la tabla.
+51>52>La persona con nombre Persona6 NO está en la tabla.
+53>54>La persona con nombre Persona8 NO está en la tabla.
+55>56>La persona con nombre Persona10 NO está en la tabla.
+57>#  imprimo la tabla .
+58>Persona 5: Persona5, 55 años
+Persona 7: Persona7, 77 años
+Persona 9: Persona9, 99 años
+Persona 1: Persona1, 11 años
+Persona 3: Persona3, 33 años
+59>#  libero la tabla.
+60>61>Fin.

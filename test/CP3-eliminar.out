@@ -1,0 +1,100 @@
+1>#  implementar eliminarPriorotaria.
+2>#  creo la cola de tamaño 10.
+3>4>#  elimino cuando la cola está vacía.
+5>6>#  creo Persona 8 y agrego a cola.
+7>8>9>10>11>12>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+13>14>#  verifico que la persona 8 está en la cola.
+15>La persona 8 está en la cola de prioridad.
+16>#  la persona 8 es la única y la prioritaria.
+17>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+18>#  elimino la persona 8 de la cola.
+19>20>#  ahora no debería estar y la cola es vacía.
+21>La persona 8 no está en la cola de prioridad.
+22>La cola de prioridad está vacía.
+23>#  creo Persona 7 y agrego a cola.
+24>25>26>27>28>29>Persona 7: Persona7, 10 años
+Evento 1:  Evento1
+Fecha: 7/10/2022
+30>31>#  creo Persona 10 y agrego a cola.
+32>33>34>35>36>37>Persona 10: Persona10, 10 años
+Evento 1:  Evento1
+Fecha: 11/10/2021
+38>39>#  creo Persona 1 y agrego a cola.
+40>41>42>43>44>45>Persona 1: Persona1, 10 años
+Evento 1:  Evento1
+Fecha: 12/10/2022
+46>47>#  creo Persona 2 y agrego a cola.
+48>49>50>51>52>53>Persona 2: Persona2, 10 años
+Evento 1:  Evento1
+Fecha: 2/10/2022
+54>55>#  creo Persona 8 y agrego a cola.
+56>57>58>59>60>61>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+62>63>#  creo Persona 9 y agrego a cola.
+64>65>66>67>68>69>Persona 9: Persona9, 10 años
+Evento 1:  Evento1
+Fecha: 9/10/2022
+70>71>#  creo Persona 5 y agrego a cola.
+72>73>74>75>76>77>Persona 5: Persona5, 10 años
+Evento 1:  Evento1
+Fecha: 5/10/2022
+78>79>#  creo Persona 3 y agrego a cola.
+80>81>82>83>84>85>Persona 3: Persona3, 10 años
+Evento 1:  Evento1
+Fecha: 3/10/2022
+86>87>#  creo Persona 4 y agrego a cola.
+88>89>90>91>92>93>Persona 4: Persona4, 10 años
+Evento 1:  Evento1
+Fecha: 4/10/2022
+94>95>#  la persona prioritaria sigue siendo 8.
+96>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+97>#  ahora la elimino y la prioritaria es la 10.
+98>99>Persona 10: Persona10, 10 años
+Evento 1:  Evento1
+Fecha: 11/10/2021
+100>#  vuelvo a eliminar y la prioritaria es la 2.
+101>102>Persona 2: Persona2, 10 años
+Evento 1:  Evento1
+Fecha: 2/10/2022
+103>#  creo Persona 6 y agrego a cola.
+104>105>106>107>108>109>Persona 6: Persona6, 10 años
+Evento 1:  Evento1
+Fecha: 6/6/6
+110>111>#  creo Persona 8 y agrego a cola.
+112>113>114>115>116>117>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+118>119>#  creo Persona 10 y agrego a cola.
+120>121>122>123>124>125>Persona 10: Persona10, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2022
+126>127>#  ahora la 6 es la prioritaria.
+128>Persona 6: Persona6, 10 años
+Evento 1:  Evento1
+Fecha: 6/6/6
+129>#  vuelvo a eliminar y la prioritaria es la 8.
+130>131>Persona 8: Persona8, 10 años
+Evento 1:  Evento1
+Fecha: 10/10/2021
+132>#  vuelvo a eliminar y la prioritaria es la 2.
+133>134>Persona 2: Persona2, 10 años
+Evento 1:  Evento1
+Fecha: 2/10/2022
+135>136>137>138>139>140>141>142>#  siguen quedando elementos en la cola.
+143>La cola de prioridad no está vacía.
+144>#  la prioritaria es la persona 1.
+145>Persona 1: Persona1, 10 años
+Evento 1:  Evento1
+Fecha: 12/10/2022
+146>#  y su prioridad es la fecha:.
+147>12/10/2022
+148>#  elimino y ahora si queda vacía.
+149>150>La cola de prioridad está vacía.
+151>152>Fin.

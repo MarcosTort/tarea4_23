@@ -1,0 +1,33 @@
+1>2>#  creo 8 personas y las agrego a la lista.
+3>4>5>6>7>8>9>10>11>12>13>14>15>16>17>18>19>#  imprimo la cantidad y la lista.
+20>La cantidad de personas en la lista es: 8.
+21>Persona 1: Persona1, 11 años
+Persona 2: Persona2, 22 años
+Persona 3: Persona3, 33 años
+Persona 4: Persona4, 44 años
+Persona 5: Persona5, 55 años
+Persona 6: Persona6, 66 años
+Persona 7: Persona7, 77 años
+Persona 8: Persona8, 88 años
+22>#  verifico que esten 4 personas distintas y las obtengo .
+23>La persona con nombre Persona1 está en la lista.
+24>Persona 1: Persona1, 11 años
+25>La persona con nombre Persona3 está en la lista.
+26>Persona 3: Persona3, 33 años
+27>La persona con nombre Persona6 está en la lista.
+28>Persona 6: Persona6, 66 años
+29>La persona con nombre Persona8 está en la lista.
+30>Persona 8: Persona8, 88 años
+31>#  ahora elimino a esas personas y verifico que no estan mas.
+32>33>La persona con nombre Persona1 NO está en la lista.
+34>35>La persona con nombre Persona3 NO está en la lista.
+36>37>La persona con nombre Persona6 NO está en la lista.
+38>39>La persona con nombre Persona8 NO está en la lista.
+40>#  imprimo la cantidad y la lista.
+41>La cantidad de personas en la lista es: 4.
+42>Persona 2: Persona2, 22 años
+Persona 4: Persona4, 44 años
+Persona 5: Persona5, 55 años
+Persona 7: Persona7, 77 años
+43>#  libero la lista.
+44>45>Fin.

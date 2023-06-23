@@ -1,0 +1,64 @@
+# creo una tabla de tamanio 4
+crearTTablaPersonas 4
+
+# creo una persona mario y la inserto en la tabla
+crearPersona 4 4 mario
+insertarPersonaEnTabla
+
+# creo una persona maria y la inserto en la tabla
+crearPersona 5 5 maria
+insertarPersonaEnTabla
+
+# creo una persona ariam y la inserto en la tabla
+# como ariam tiene las mismas letras que maria se produce una colision
+crearPersona 7 7 ariam
+insertarPersonaEnTabla
+
+# imprimo la tabla
+imprimirTTablaPersonas
+
+# verifico que las 3 personas pertenezcan a la tabla y las obtengo
+# 
+# verifico que mario este en la tabla
+perteneceATTablaPersonas mario
+obtenerPersonaDeTTablaPersonas mario
+
+# verifico que ariam este en la tabla
+perteneceATTablaPersonas ariam
+obtenerPersonaDeTTablaPersonas ariam
+
+# verifico que maria este en la tabla
+perteneceATTablaPersonas maria
+obtenerPersonaDeTTablaPersonas maria 
+
+# verifico que juan no este en la tabla
+perteneceATTablaPersonas juan 
+
+#
+#
+# Ahora probamos el eliminar
+#
+#
+
+# elimino a maria de la tabla 
+eliminarPersonaDeTTablaPersonas maria
+
+# verifico que maria no esta en la tabla
+perteneceATTablaPersonas maria 
+
+# verifico que ariam sigue en la tabla
+perteneceATTablaPersonas ariam 
+obtenerPersonaDeTTablaPersonas ariam
+
+# elimino a ariam y a mario de la tabla
+eliminarPersonaDeTTablaPersonas ariam
+eliminarPersonaDeTTablaPersonas mario 
+
+# verifico que ninguno sigue en la tabla
+perteneceATTablaPersonas ariam 
+perteneceATTablaPersonas mario 
+
+# libero la tabla
+liberarTTablaPersonas
+
+Fin

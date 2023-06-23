@@ -1,0 +1,26 @@
+1>#  creo una tabla de tamanio 4.
+2>3>#  creo una persona Juan y la inserto en la tabla.
+4>5>6>#  creo una persona Maria y la inserto en la tabla.
+7>8>9>#  imprimo la tabla (se imprime primero a María y luego a Juan).
+10>Persona 5: Maria, 5 años
+Persona 4: Juan, 4 años
+11>#  libero la tabla.
+12>13># 
+.
+14># 
+.
+15># 
+.
+16># 
+.
+17>#  creo una tabla de tamanio 4.
+18>19>#  creo una persona juan y la inserto en la tabla.
+20>21>22>#  creo una persona maria y la inserto en la tabla.
+23>24>25>#  creo una persona ariam y la inserto en la tabla.
+26>#  como ariam tiene las mismas letras que maria se produce una colision.
+27>28>29>#  imprimo la tabla (se imprimen en orden: ariam, maria y juan, ya que ariam es mas reciente que maria).
+30>Persona 7: ariam, 7 años
+Persona 5: maria, 5 años
+Persona 4: juan, 4 años
+31>#  libero la tabla.
+32>33>Fin.

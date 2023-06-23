@@ -1,0 +1,69 @@
+# creo una tabla de tamanio 10
+crearTTablaPersonas 10
+
+# creo 10 personas, las inserto en la tabla, verifico que pertenezcan y las obtengo
+
+crearPersona 1 11 Persona1
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona1
+obtenerPersonaDeTTablaPersonas Persona1
+crearPersona 2 22 Persona2
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona2
+obtenerPersonaDeTTablaPersonas Persona2
+crearPersona 3 33 Persona3
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona3
+obtenerPersonaDeTTablaPersonas Persona3
+crearPersona 4 44 Persona4
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona4
+obtenerPersonaDeTTablaPersonas Persona4
+crearPersona 5 55 Persona5
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona5
+obtenerPersonaDeTTablaPersonas Persona5
+crearPersona 6 66 Persona6
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona6
+obtenerPersonaDeTTablaPersonas Persona6
+crearPersona 7 77 Persona7
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona7
+obtenerPersonaDeTTablaPersonas Persona7
+crearPersona 8 88 Persona8
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona8
+obtenerPersonaDeTTablaPersonas Persona8
+crearPersona 9 99 Persona9
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona9
+obtenerPersonaDeTTablaPersonas Persona9
+crearPersona 10 100 Persona10
+insertarPersonaEnTabla
+perteneceATTablaPersonas Persona10
+obtenerPersonaDeTTablaPersonas Persona10
+
+# imprimo la tabla en el orden que quedaron insertados
+imprimirTTablaPersonas
+
+
+# elimino las personas de id par y verifico que no pertenecen
+eliminarPersonaDeTTablaPersonas Persona2
+perteneceATTablaPersonas Persona2
+eliminarPersonaDeTTablaPersonas Persona4
+perteneceATTablaPersonas Persona4
+eliminarPersonaDeTTablaPersonas Persona6
+perteneceATTablaPersonas Persona6
+eliminarPersonaDeTTablaPersonas Persona8
+perteneceATTablaPersonas Persona8
+eliminarPersonaDeTTablaPersonas Persona10
+perteneceATTablaPersonas Persona10
+
+# imprimo la tabla 
+imprimirTTablaPersonas
+
+# libero la tabla
+liberarTTablaPersonas
+
+Fin
