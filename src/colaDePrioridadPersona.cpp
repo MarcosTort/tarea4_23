@@ -44,7 +44,7 @@ nat compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
 {
   if (invertido)
   {
-    return compararTFechas(fecha2, fecha1);
+    return -1*compararTFechas(fecha1, fecha2);
   }
   return compararTFechas(fecha1, fecha2);
 }
