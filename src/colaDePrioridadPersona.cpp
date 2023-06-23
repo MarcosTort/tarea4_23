@@ -110,7 +110,10 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
-
+  if (cp->invertido)
+  {
+    return cp->array[cp->cant].persona;
+  }
   return cp->array[1].persona;
 }
 
