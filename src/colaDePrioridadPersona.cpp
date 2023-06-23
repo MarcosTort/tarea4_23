@@ -28,7 +28,7 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->prioridades = new TFecha[N + 2];
   cp->array[0].fechaPrioridad = NULL;
   cp->array[0].persona = NULL;
-  cp->invertido = false;
+  cp->invertido = true;
   for (nat i = 0; i <= N + 1; i++)
   {
     cp->prioridades[i] = NULL;
@@ -110,10 +110,7 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
-  if (cp->invertido)
-  {
-    return cp->array[cp->cant].persona;
-  }
+  
   return cp->array[1].persona;
 }
 
