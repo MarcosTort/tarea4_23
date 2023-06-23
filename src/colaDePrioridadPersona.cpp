@@ -28,7 +28,7 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->prioridades = new TFecha[N + 2];
   cp->array[0].fechaPrioridad = NULL;
   cp->array[0].persona = NULL;
-  cp->invertido = true;
+  cp->invertido = false;
   for (nat i = 0; i <= N + 1; i++)
   {
     cp->prioridades[i] = NULL;
@@ -152,5 +152,5 @@ bool estaEnCP(nat id, TColaDePrioridadPersona cp)
 
 TFecha prioridad(nat id, TColaDePrioridadPersona cp)
 {
-  return cp->prioridades[id];
+  return cp->array[id].fechaPrioridad;
 }
