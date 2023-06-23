@@ -118,10 +118,8 @@ void eliminarPrioritaria(TColaDePrioridadPersona &cp)
 
 bool estaEnCP(nat id, TColaDePrioridadPersona cp)
 {
-  TFecha fecha = crearTFecha(0, 0, 0);
-  bool esta = (compararTFechas(cp->prioridades[id], fecha) != 0);
-  liberarTFecha(fecha);
-  return esta;
+  
+  return cp->prioridades[id] != NULL;
 }
 
 TFecha prioridad(nat id, TColaDePrioridadPersona cp)
