@@ -96,9 +96,9 @@ void insertarEnCP(TPersona persona, TColaDePrioridadPersona &cp)
   {
     Elem aux = cp->array[i / 2];
     cp->array[i / 2] = cp->array[i];
-    cp->prioridades[idTPersona(cp->array[i / 2].persona)] = obtenerFechaPrioridad(cp->array[i / 2].persona);
+    // cp->prioridades[idTPersona(cp->array[i / 2].persona)] = obtenerFechaPrioridad(cp->array[i / 2].persona);
     cp->array[i] = aux;
-    cp->prioridades[idTPersona(cp->array[i].persona)] = obtenerFechaPrioridad(cp->array[i].persona);
+    // cp->prioridades[idTPersona(cp->array[i].persona)] = obtenerFechaPrioridad(cp->array[i].persona);
     i = i / 2;
   }
 }
