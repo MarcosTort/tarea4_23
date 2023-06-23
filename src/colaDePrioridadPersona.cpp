@@ -47,6 +47,10 @@ void invertirPrioridad(TColaDePrioridadPersona &cp)
     inicio++;
     fin--;
   }
+  for (nat i = 1; i <= cp->cant; i++)
+  {
+    cp->prioridades[idTPersona(cp->array[i].persona)] = cp->array[i].fechaPrioridad;
+  }
    
 }
 
