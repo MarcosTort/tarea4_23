@@ -25,6 +25,5 @@ void listarEnOrden(TTablaPersonas t, char** nombres, nat n) {
         printf("\n");
         eliminarPrioritaria(cp);
     }
-
-    liberarCP(cp);
+    
 }
