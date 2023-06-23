@@ -51,6 +51,19 @@ void invertirPrioridad(TColaDePrioridadPersona &cp)
   {
     cp->prioridades[idTPersona(cp->array[i].persona)] = cp->array[i].fechaPrioridad;
   }
+  for (nat i = 1; i <= cp->cant; i++)
+  {
+    nat iter = i;
+    while ((compararTFechas(cp->array[iter / 2].fechaPrioridad, cp->array[iter].fechaPrioridad) == 1) && (cp->array[iter / 2].persona != NULL))
+    {
+      Elem aux = cp->array[iter / 2];
+      cp->array[iter / 2] = cp->array[iter];
+      cp->prioridades[idTPersona(cp->array[iter / 2].persona)] = obtenerFechaPrioridad(cp->array[iter / 2].persona);
+      cp->array[iter] = aux;
+      cp->prioridades[idTPersona(cp->array[iter].persona)] = obtenerFechaPrioridad(cp->array[iter].persona);
+      iter = iter / 2;
+    }
+  }
    
 }
 
