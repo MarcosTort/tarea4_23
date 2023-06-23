@@ -53,7 +53,7 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 {
   nat iter = i;
   Elem swap = cp->array[iter];
-  while (iter > 1 && compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) > 0 && cp->array[iter / 2].persona != NULL)
+  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) > 0) && (cp->array[iter / 2].persona != NULL))
   {
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
@@ -65,7 +65,7 @@ void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
   cp->invertido = !cp->invertido;
   nat tope = cp->tamanio;
-  for (nat i = tope; i >= (nat)tope / 2; --i)
+  for (nat i = tope; (nat)tope / 2 < i; --i)
   {
     filtradoAscendente(cp, i);
   }
@@ -111,7 +111,7 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
-
+  
   return cp->array[1].persona;
 }
 
