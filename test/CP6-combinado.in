@@ -1,0 +1,175 @@
+crearColaPrioridad 10
+
+# la cola está vacía, no debería haber ninguna persona
+estaPersonaEnColaPrioridad 0
+estaPersonaEnColaPrioridad 1
+estaPersonaEnColaPrioridad 10
+estaPersonaEnColaPrioridad 11
+estaVaciaColaPrioridad
+
+# creo Persona 1 y agrego a cola
+crearAgenda
+crearPersona 1 1 Persona1
+crearFecha 2/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# ahora la cola no está vacía
+estaVaciaColaPrioridad
+
+# la prioritaria es la Persona 1
+imprimirPersonaPrioritaria
+
+# la fecha de prioridad de 1 es 2/10/2022
+imprimirPrioridadPersona 1
+
+# elimino la persona prioritaria y luego agrego una nueva persona
+eliminarPersonaPrioritaria
+
+# creo Persona 2 y agrego a cola
+crearAgenda
+crearPersona 2 2 Persona2
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# ahora la prioritaria es la persona 2
+imprimirPersonaPrioritaria
+
+# ahora elimino la persona 2
+eliminarPersonaPrioritaria
+
+# agrego 10 personas a la cola
+# creo Persona 1 y agrego a cola
+crearAgenda
+crearPersona 1 1 Persona1
+crearFecha 1/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 2 y agrego a cola
+crearAgenda
+crearPersona 2 1 Persona2
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 3 y agrego a cola
+crearAgenda
+crearPersona 3 1 Persona3
+crearFecha 9/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 4 y agrego a cola
+crearAgenda
+crearPersona 4 1 Persona4
+crearFecha 8/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 5 y agrego a cola
+crearAgenda
+crearPersona 5 1 Persona5
+crearFecha 7/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 6 y agrego a cola
+crearAgenda
+crearPersona 6 1 Persona6
+crearFecha 6/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 7 y agrego a cola
+crearAgenda
+crearPersona 7 1 Persona7
+crearFecha 5/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 8 y agrego a cola
+crearAgenda
+crearPersona 8 1 Persona8
+crearFecha 4/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 9 y agrego a cola
+crearAgenda
+crearPersona 9 1 Persona9
+crearFecha 3/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 10 y agrego a cola
+crearAgenda
+crearPersona 10 1 Persona10
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+crearFecha 10/10/2021
+crearEvento 2 Evento2
+agregarEventoPersona
+crearFecha 20/10/2021
+crearEvento 3 Evento3
+agregarEventoPersona
+crearFecha 25/10/2021
+crearEvento 4 Evento4
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# la prioritaria es la persona 10
+imprimirPersonaPrioritaria
+
+# la fecha de prioridad de la persona 1 es: 1/10/2022
+imprimirPrioridadPersona 1
+
+# la fecha de prioridad de la persona 10 es: 10/10/2021
+imprimirPrioridadPersona 10
+
+# verifico que todas las personas estén en la cola
+estaPersonaEnColaPrioridad 1
+estaPersonaEnColaPrioridad 2
+estaPersonaEnColaPrioridad 10
+
+# verifico las fechas de las personas
+imprimirPrioridadPersona 1
+imprimirPrioridadPersona 2
+imprimirPrioridadPersona 10
+
+# elimino la prioritaria y ahora la prioritaria es la persona 1
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+# elimino la prioritaria y ahora la prioritaria es la persona 9
+eliminarPersonaPrioritaria
+imprimirPersonaPrioritaria
+
+liberarColaPrioridad
+
+Fin

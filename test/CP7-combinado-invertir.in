@@ -1,0 +1,66 @@
+# creo una cola e invierto la prioridad
+crearColaPrioridad 10
+invertirPrioridad
+
+# creo Persona 1 y agrego a cola
+crearAgenda
+crearPersona 1 1 Persona1
+crearFecha 2/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# invierto la prioridad nuevamente
+invertirPrioridad
+
+# verifico que la Persona 1 está en la cola y es la prioritaria
+estaPersonaEnColaPrioridad 1
+imprimirPersonaPrioritaria
+
+# creo Persona 2 y agrego a cola
+crearAgenda
+crearPersona 2 1 Persona2
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 3 y agrego a cola
+crearAgenda
+crearPersona 3 1 Persona3
+crearFecha 9/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 4 y agrego a cola
+crearAgenda
+crearPersona 4 1 Persona4
+crearFecha 8/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# creo Persona 5 y agrego a cola
+crearAgenda
+crearPersona 5 1 Persona5
+crearFecha 7/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+imprimirPersona
+insertarColaPrioridad
+
+# la persona prioritaria es la 1
+imprimirPersonaPrioritaria
+
+# ahora invierto la prioridad y la prioritaria es la 2
+invertirPrioridad
+imprimirPersonaPrioritaria
+
+liberarColaPrioridad
+
+Fin

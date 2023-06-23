@@ -1,0 +1,75 @@
+# se asume un ID máximo de persona de 10
+
+crearTTablaPersonas 20
+
+# creo Persona 3 y agrego a tabla
+crearAgenda
+crearPersona 3 30 Persona3
+crearFecha 3/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 4 y agrego a tabla
+crearAgenda
+crearPersona 4 40 Persona4
+crearFecha 4/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 5 y agrego a tabla
+crearAgenda
+crearPersona 5 50 Persona5
+crearFecha 5/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 6 y agrego a tabla
+crearAgenda
+crearPersona 6 60 Persona6
+crearFecha 6/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 7 y agrego a tabla
+crearAgenda
+crearPersona 7 70 Persona7
+crearFecha 7/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 8 y agrego a tabla
+crearAgenda
+crearPersona 8 80 Persona8
+crearFecha 8/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 9 y agrego a tabla
+crearAgenda
+crearPersona 9 90 Persona9
+crearFecha 9/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+# creo Persona 10 y agrego a tabla
+crearAgenda
+crearPersona 10 10 Persona10
+crearFecha 10/10/2022
+crearEvento 1 Evento1
+agregarEventoPersona
+insertarPersonaEnTabla
+
+
+# el orden debe ser 3, 4, 5, 6, 7, 10
+listarEnOrden 6 Persona5 Persona7 Persona6 Persona3 Persona10 Persona4
+
+liberarTTablaPersonas
+
+Fin
