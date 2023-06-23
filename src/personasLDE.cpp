@@ -298,6 +298,7 @@ void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nom
                 aux->siguiente->anterior = aux->anterior;
                 liberarTPersona(aux->persona);
                 delete aux;
+                
             }
             return;
         }

@@ -13,6 +13,7 @@ struct rep_colaDePrioridadPersona
   nat tamanio;
   nat cant;
   TFecha *prioridades;
+  bool invertido;
 };
 TFecha obtenerFechaPrioridad(TPersona persona)
 {
@@ -38,9 +39,26 @@ TColaDePrioridadPersona crearCP(nat N)
   }
   return cp;
 }
+void filtradoAscendente(TColaDePrioridadPersona cp, nat i){
+  
+  while ((compararTFechas(cp->array[i / 2].fechaPrioridad, cp->array[i].fechaPrioridad) == 1) && (cp->array[i / 2].persona != NULL))
+  {
+    Elem aux = cp->array[i / 2];
+    cp->array[i / 2] = cp->array[i];
+    cp->prioridades[idTPersona(cp->array[i / 2].persona)] = obtenerFechaPrioridad(cp->array[i / 2].persona);
+    cp->array[i] = aux;
+    cp->prioridades[idTPersona(cp->array[i].persona)] = obtenerFechaPrioridad(cp->array[i].persona);
+    i = i / 2;
+  }
 
+}
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
+  cp->invertido = !cp->invertido;
+  nat tope = cp->tamanio;
+  for(nat i; (nat)tope/2 >= i; i++){
+    
+  }
  
 }
 
@@ -67,16 +85,8 @@ void insertarEnCP(TPersona persona, TColaDePrioridadPersona &cp)
   cp->array[cp->cant].persona = persona;
   cp->array[cp->cant].fechaPrioridad = obtenerFechaPrioridad(persona);
   cp->prioridades[idTPersona(persona)] = obtenerFechaPrioridad(persona);
-  nat iter = cp->cant;
-  while ((compararTFechas(cp->array[iter / 2].fechaPrioridad, cp->array[iter].fechaPrioridad) == 1) && (cp->array[iter / 2].persona != NULL))
-  {
-    Elem aux = cp->array[iter / 2];
-    cp->array[iter / 2] = cp->array[iter];
-    cp->prioridades[idTPersona(cp->array[iter / 2].persona)] = obtenerFechaPrioridad(cp->array[iter / 2].persona);
-    cp->array[iter] = aux;
-    cp->prioridades[idTPersona(cp->array[iter].persona)] = obtenerFechaPrioridad(cp->array[iter].persona);
-    iter = iter / 2;
-  }
+  nat i = cp->cant;
+  filtradoAscendente(cp, i);
 }
 
 bool estaVaciaCP(TColaDePrioridadPersona cp)
