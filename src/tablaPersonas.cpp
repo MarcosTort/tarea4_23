@@ -9,21 +9,21 @@ struct rep_tablaPersonas {
 
 nat funcionDeDispersion(const char nombre[100]){
     nat res = 0;
-    int i = 0;
+    nat i = 0;
     while(i< 100 && nombre[i] != '\0'){
-        res += int(nombre[i]);
+        res += nat(nombre[i]);
         i++;
     }
     return res;
 }
 
-TTablaPersonas crearTTablaPersonas(int max){
+TTablaPersonas crearTTablaPersonas(nat max){
     
     TTablaPersonas tabla = new rep_tablaPersonas;
     tabla->tamanio = max;
     tabla->cant = 0;
     tabla->array = new TPersonasLDE[max];
-    for (int i = 0; i < max; i++)
+    for (nat i = 0; i < max; i++)
     {
         tabla->array[i] = crearTPersonasLDE();
     }
@@ -55,7 +55,7 @@ TPersona obtenerPersonaDeTTablaPersonas(TTablaPersonas tabla, const char nombre[
 
 
 void liberarTTablaPersonas(TTablaPersonas &tabla){
-    for (int i = 0; i < tabla->tamanio; i++)
+    for (nat i = 0; i < tabla->tamanio; i++)
     {
         liberarTPersonasLDE(tabla->array[i]);
     }
@@ -65,7 +65,7 @@ void liberarTTablaPersonas(TTablaPersonas &tabla){
 
 
 void imprimirTTablaPersonas(TTablaPersonas tabla){
-    for (int i = 0; i < tabla->tamanio; i++)
+    for (nat i = 0; i < tabla->tamanio; i++)
     {
         imprimirTPersonasLDE(tabla->array[i]);
     }
