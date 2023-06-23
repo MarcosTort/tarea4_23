@@ -66,7 +66,7 @@ void liberarTTablaPersonas(TTablaPersonas &tabla)
     {
         liberarTPersonasLDE(tabla->array[i]);
     }
-    delete tabla->array;
+    delete[] tabla->array;
     delete tabla;
 }
 

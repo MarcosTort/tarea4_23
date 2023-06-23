@@ -13,7 +13,6 @@ struct rep_colaDePrioridadPersona
   nat tamanio;
   nat cant;
   TFecha *prioridades;
-  bool invertido;
 };
 TFecha obtenerFechaPrioridad(TPersona persona)
 {
@@ -28,7 +27,6 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->prioridades = new TFecha[N + 2];
   cp->array[0].fechaPrioridad =NULL;
   cp->array[0].persona = NULL;
-  cp->invertido = false;
   for (nat i = 0; i <= N + 1; i++)
   {
     cp->prioridades[i] = NULL;
@@ -43,7 +41,6 @@ TColaDePrioridadPersona crearCP(nat N)
 
 void invertirPrioridad(TColaDePrioridadPersona &cp)
 {
-  cp->invertido = !cp->invertido;
  
 }
 
@@ -89,9 +86,7 @@ bool estaVaciaCP(TColaDePrioridadPersona cp)
 
 TPersona prioritaria(TColaDePrioridadPersona cp)
 {
-  if(cp->invertido){
-    return cp->array[cp->cant].persona;
-  }
+  
   return cp->array[1].persona;
 }
 
