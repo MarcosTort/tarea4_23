@@ -42,16 +42,16 @@ TColaDePrioridadPersona crearCP(nat N)
 }
 void imprimirColaDePrioridadPersona(TColaDePrioridadPersona cp)
 {
+  printf("##############\n");
+
   for (nat i = 1; i <= cp->cant; i++)
   {
-    printf("##############\n");
     imprimirTPersona(cp->array[i].persona);
     printf("Prioridad: ");
     imprimirTFecha(cp->array[i].fechaPrioridad);
     printf("\n");
-
-    printf("##############\n");
   }
+  printf("##############\n");
 }
 int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
 {
