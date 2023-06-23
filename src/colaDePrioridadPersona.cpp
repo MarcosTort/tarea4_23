@@ -28,6 +28,7 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->prioridades = new TFecha[N + 2];
   cp->array[0].fechaPrioridad =NULL;
   cp->array[0].persona = NULL;
+  cp->invertido = false;
   for (nat i = 0; i <= N + 1; i++)
   {
     cp->prioridades[i] = NULL;
