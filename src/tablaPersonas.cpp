@@ -43,7 +43,7 @@ void insertarPersonaEnTabla(TTablaPersonas &tabla, TPersona persona)
 
 void eliminarPersonaDeTTablaPersonas(TTablaPersonas &tabla, const char nombre[100])
 {
-    nat pos = funcionDeDispersion(nombre);
+    nat pos = funcionDeDispersion(nombre) % tabla->tamanio;
     eliminarPersonaConNombreTPersonasLDE(tabla->array[pos], nombre);
     tabla->cant--;
 }
