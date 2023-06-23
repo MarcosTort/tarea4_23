@@ -51,8 +51,8 @@ int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
 
 void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 {
-  Elem swap = cp->array[i];
   nat iter = i;
+  Elem swap = cp->array[iter];
   while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) == 1))
   {
 
