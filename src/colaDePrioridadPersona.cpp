@@ -48,26 +48,20 @@ int compararConInversion(TFecha fecha1, TFecha fecha2, bool invertido)
   }
   return compararTFechas(fecha1, fecha2);
 }
-
-void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
-{
+void filtradoAscendente(TColaDePrioridadPersona cp, nat i) {
   nat iter = i;
   Elem swap = cp->array[iter];
-  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) == 1) && (cp->array[iter / 2].persona != NULL))
-  {
+  while (iter > 1 && compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) > 0 && cp->array[iter / 2].persona != NULL) {
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
   }
-  printf("iter: %d\n", iter);
   cp->array[iter] = swap;
 }
 
-void invertirPrioridad(TColaDePrioridadPersona &cp)
-{
+void invertirPrioridad(TColaDePrioridadPersona cp) {
   cp->invertido = !cp->invertido;
   nat tope = cp->tamanio;
-  for (nat i = tope; (nat)tope / 2 < i; --i)
-  {
+  for (nat i = tope; i >= (nat) tope / 2; --i) {
     filtradoAscendente(cp, i);
   }
 }
