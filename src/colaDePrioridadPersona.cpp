@@ -53,7 +53,7 @@ void filtradoAscendente(TColaDePrioridadPersona &cp, nat i)
 {
   nat iter = i;
   Elem swap = cp->array[iter];
-  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) > 0) && (cp->array[iter / 2].persona != NULL))
+  while (iter > 1 && (compararConInversion(cp->array[iter / 2].fechaPrioridad, swap.fechaPrioridad, cp->invertido) == 1) && (cp->array[iter / 2].persona != NULL))
   {
     cp->array[iter] = cp->array[iter / 2];
     iter = iter / 2;
