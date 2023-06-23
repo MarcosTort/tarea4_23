@@ -66,7 +66,7 @@ void invertirPrioridad(TColaDePrioridadPersona &cp)
   cp->invertido = !cp->invertido;
   nat tope = cp->tamanio;
   printf("tope: %d\n", tope);
-  for (nat i = tope; (nat)tope / 2 < i; --i)
+  for (nat i = tope; (nat)tope / 2 <= i; --i)
   {
     filtradoAscendente(cp, i);
   }
