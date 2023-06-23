@@ -21,7 +21,7 @@ TColaDePrioridadPersona crearCP(nat N)
   cp->tamanio = N;
   cp->cant = 0;
   cp->prioridades = new TFecha[N + 2];
-  cp->array[0].fechaPrioridad = crearTFecha(0, 0, 0);
+  cp->array[0].fechaPrioridad =NULL;
   cp->array[0].persona = NULL;
   for (nat i = 0; i <= N + 1; i++)
   {
@@ -29,7 +29,7 @@ TColaDePrioridadPersona crearCP(nat N)
   }
   for (nat i = 0; i <= N; i++)
   {
-    cp->array[i].fechaPrioridad = crearTFecha(0, 0, 0);
+    cp->array[i].fechaPrioridad = NULL;
     cp->array[i].persona = NULL;
   }
   return cp;
