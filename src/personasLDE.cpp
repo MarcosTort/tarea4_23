@@ -279,12 +279,6 @@ TPersona obtenerFinalDeTPersonasLDE(TPersonasLDE personas)
 
 void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nombre[100])
 {
-
-    if (personas->inicio == NULL)
-    {
-        return;
-    }
-
     Nodo aux = personas->inicio;
     while (aux != NULL)
     {
@@ -305,6 +299,7 @@ void eliminarPersonaConNombreTPersonasLDE(TPersonasLDE &personas, const char nom
                 liberarTPersona(aux->persona);
                 delete aux;
             }
+            return;
         }
         aux = aux->siguiente;
     }
